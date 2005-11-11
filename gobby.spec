@@ -1,12 +1,12 @@
 Summary:	Gobby network editor
 Summary(pl):	Edytor sieciowy Gobby
 Name:		gobby
-Version:	0.2.0
+Version:	0.2.2
 Release:	1
 License:	BSD
 Group:		Applications/Editors
 Source0:	http://releases.0x539.de/gobby/%{name}-%{version}.tar.gz
-# Source0-md5:	96840791c38db6a36d4fb16aefbedad2
+# Source0-md5:	9a1b61ee3aebe737e5d9918f7601b5d4
 URL:		http://gobby.0x539.de/
 BuildRequires:	gtk+2-devel >= 2.0.0
 BuildRequires:	obby-devel >= 0.2.0
