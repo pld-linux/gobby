@@ -4,7 +4,7 @@
 #
 %define		_rc rc3
 Summary:	Gobby network editor
-Summary(pl):	Edytor sieciowy Gobby
+Summary(pl.UTF-8):   Edytor sieciowy Gobby
 Name:		gobby
 Version:	0.3.0
 Release:	0.%{_rc}.1
@@ -26,7 +26,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 gobby network editor.
 
-%description -l pl
+%description -l pl.UTF-8
 Edytor sieciowy Gobby.
 
 %prep
