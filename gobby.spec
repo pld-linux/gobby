@@ -4,7 +4,7 @@
 #
 %define		_rc rc3
 Summary:	Gobby network editor
-Summary(pl.UTF-8):   Edytor sieciowy Gobby
+Summary(pl.UTF-8):	Edytor sieciowy Gobby
 Name:		gobby
 Version:	0.3.0
 Release:	0.%{_rc}.1
