@@ -2,24 +2,22 @@
 # Conditional build:
 %bcond_without	gnome		# build without GNOME integration
 #
-%define		_rc rc3
 Summary:	Gobby network editor
 Summary(pl.UTF-8):	Edytor sieciowy Gobby
 Name:		gobby
-Version:	0.3.0
-Release:	0.%{_rc}.1
+Version:	0.4.3
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Editors
-Source0:	http://releases.0x539.de/gobby/%{name}-%{version}%{_rc}.tar.gz
-# Source0-md5:	59f6b9b7076cb6f23fad054554eedb6a
-Patch0:		%{name}-desktop.patch
+Source0:	http://releases.0x539.de/gobby/%{name}-%{version}.tar.gz
+# Source0-md5:	84f07ec2471b862f385cada6246695fe
 URL:		http://gobby.0x539.de/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1.9
 BuildRequires:	gtkmm-devel >= 2.6.0
 BuildRequires:	gtksourceview-devel >= 1.0.0
 BuildRequires:	libxml++-devel >= 2.6.0
-BuildRequires:	obby-devel >= 0.3.0-0.rc3.1
+BuildRequires:	obby-devel >= 0.4.3
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,8 +28,7 @@ gobby network editor.
 Edytor sieciowy Gobby.
 
 %prep
-%setup -q -n %{name}-%{version}%{_rc}
-%patch0 -p1
+%setup -q
 
 %build
 %{__aclocal} -I m4
