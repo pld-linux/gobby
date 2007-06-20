@@ -5,12 +5,12 @@
 Summary:	Gobby network editor
 Summary(pl.UTF-8):	Edytor sieciowy Gobby
 Name:		gobby
-Version:	0.4.3
+Version:	0.4.4
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Editors
 Source0:	http://releases.0x539.de/gobby/%{name}-%{version}.tar.gz
-# Source0-md5:	84f07ec2471b862f385cada6246695fe
+# Source0-md5:	7e8aaba5c97069864a70843adad2b710
 URL:		http://gobby.0x539.de/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1.9
