@@ -6,7 +6,7 @@ Summary:	Gobby network editor
 Summary(pl.UTF-8):	Edytor sieciowy Gobby
 Name:		gobby
 Version:	0.5.0
-Release:	2
+Release:	3
 License:	ISC
 Group:		X11/Applications/Editors
 Source0:	http://releases.0x539.de/gobby/%{name}-%{version}.tar.gz
@@ -26,9 +26,9 @@ BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libinfinity-devel >= 0.6
 %{!?with_gtk3:BuildRequires:	libinfinity-gtk-devel >= 0.6}
 %{?with_gtk3:BuildRequires:	libinfinity-gtk3-devel >= 0.6}
+BuildRequires:	libstdc++-devel >= 6:4.3
 %{!?with_gtk3:BuildRequires:	libunique-devel >= 1.1.2}
 %{?with_gtk3:BuildRequires:	libunique3-devel >= 3}
-BuildRequires:	libstdc++-devel
 BuildRequires:	libxml++2-devel >= 2.6.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.596
@@ -49,6 +49,7 @@ Edytor sieciowy Gobby.
 %{__aclocal} -I m4
 %{__autoconf}
 %{__automake}
+CXXFLAGS="%{rpmcxxflags} -std=c++0x"
 %configure \
 	%{?with_gtk3:--with-gtk3}
 %{__make}
