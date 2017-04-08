@@ -6,7 +6,7 @@ Summary:	Gobby network editor
 Summary(pl.UTF-8):	Edytor sieciowy Gobby
 Name:		gobby
 Version:	0.5.0
-Release:	3
+Release:	4
 License:	ISC
 Group:		X11/Applications/Editors
 Source0:	http://releases.0x539.de/gobby/%{name}-%{version}.tar.gz
